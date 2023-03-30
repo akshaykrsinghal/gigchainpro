@@ -2,6 +2,8 @@ const express = require('express');
 const routes = require('./Routes/routes');
 const app = express();
 const cors = require('cors');
+require('dotenv').config('');
+
 const mongodbconnect = require('../server/Connection/mongoose');
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
